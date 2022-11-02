@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="stylesheet" href="/style.css">
+<title>CodePen - GSAP ScrollTrigger - Demo</title>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class='loader df aic jcc'>
+<div>
+<h1>Loading</h1>
+<h2 class='loader--text'>0%</h2>
+</div>
+</div>
+<div class='demo-wrapper'>
+<header class='df aic jcc'>
+<div>
+<h1>ScrollTrigger</h1>
+<h2>demo</h2>
+</div>
+</header>
+<section class='demo-text'>
+<div class='wrapper text'>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+</div>
+</section>
+
+
+
+<section class='demo-gallery'>
+<ul class='wrapper'>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=87' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=22' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=52' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=182' width='1240'>
+</li>
+</ul>
+</section>
+<section class='demo-gallery'>
+<ul class='wrapper'>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=98' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=120' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=0' width='1240'>
+</li>
+</ul>
+</section>
+<section class='demo-gallery'>
+<ul class='wrapper'>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=68' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=94' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=109' width='1240'>
+ </li>
+</ul>
+</section>
+<section class='demo-gallery'>
+<ul class='wrapper'>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=117' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=24' width='1240'>
+</li>
+<li>
+<img height='874' src='https://source.unsplash.com/random/1240x874?sig=141' width='1240'>
+</li>
+</ul>
+</section>
+<section class='demo-text'>
+<div class='wrapper text'>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+</div>
+</section>
+<footer class='df aic jcc'>
+<p>Images from <a href="https://unsplash.com/">Unsplash</a></p>
+</footer>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+<script id="rendered-js">
+gsap.registerPlugin(ScrollTrigger);
+
+const images = gsap.utils.toArray('img');
+const loader = document.querySelector('.loader--text');
+const updateProgress = (instance) =>
+loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
+
+const showDemo = () => {
+  document.body.style.overflow = 'auto';
+  document.scrollingElement.scrollTo(0, 0);
+  gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
+
+  gsap.utils.toArray('section').forEach((section, index) => {
+    const w = section.querySelector('.wrapper');
+    const [x, xEnd] = index % 2 ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+    gsap.fromTo(w, { x }, {
+      x: xEnd,
+      scrollTrigger: {
+        trigger: section,
+        scrub: 0.5 } });
+
+
+  });
+};
+
+imagesLoaded(images).on('progress', updateProgress).on('always', showDemo);
+//# sourceURL=pen.js
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐브엔터테인먼트</title>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/./faviconandroid-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<!-- JQuery CDN -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- font -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<!-- swiper slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- script -->
+<script defer src="./script/youtube.js"></script>
+<script defer src="./script/javascript.js"></script>
+
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("./common/header.html");  //헤더 인클루드
+        $("#footers").load("./common/footer.html");  //푸터부분 인클루드
+     });
+    </script>
+    
+</head>
+<body>
+    <div id="headers"></div>
+    <div class="inner">
+        <h1>ARTISTS</h1>
+        <!-- <div class="history">
+            <p class="history_nav">ARTISTS</p>
+            <span class="history_line"></span>
+            <p>ARTISTS</p>
+        </div> -->
+        </div>
+        <div class="slide_wrap">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div href="javascript:void(0)" class="swiper-slide">
+              <img src="./img/clc01.png" alt="씨엘씨">
+              <p>씨엘씨<span>CLC</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide sl_bt">
+              <img src="./img/idle01.png" alt="여자아이들">
+              <p>(여자)아이들<span>(G)I-DLE</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide">
+              <img src="./img/btob01.png" alt="비투비">
+              <p>비투비<span>BTOB</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide sl_bt">
+              <img src="./img/pentagon.png" alt="펜타곤">
+              <p>펜타곤<span>PENTAGON</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide">
+              <img src="./img/jokwon01.png" alt="조권">
+              <p>조권<span>JO GWON</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide sl_bt">
+              <img src="./img/nainwoo01.png" alt="나인우">
+              <p>나인우<span>NA INWOO</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide">
+              <img src="./img/leeeunji01.png" alt="이은지">
+              <p>이은지<span>LEE EUNJI</span></p>
+            </div>
+            <div href="javascript:void(0)" class="swiper-slide sl_bt">
+              <img src="./img/lightsum.png" alt="라잇썸">
+              <p>라잇썸<span>LIGHTSUM</span></p>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>  
+        </div>
+
+        <div class="tab_wrap">
+          <div id="tab-menu">
+            <div id="tab-btn">
+              <ul>
+                <li class="active"><a href="javascript:void(0)">조권
+                </a></li>
+                <li><a href="javascript:void(0)">BTOB</a></li>
+                <li><a href="javascript:void(0)">CLC</a></li>
+                <li><a href="javascript:void(0)">PENTAGON</a></li>
+                <li><a href="javascript:void(0)">(G)I-DLE</a></li>
+                <li><a href="javascript:void(0)">LIGHTSUM</a></li>
+                <li><a href="javascript:void(0)">이은지</a></li>
+                <li><a href="javascript:void(0)">나인우</a></li>
+                <!-- <li><a href="javascript:void(0)">박미선</a></li> -->
+              </ul>
+            </div>
+          
+              <div id="tab-cont">
+                <div>
+                  <img src="./img/jokwon02.png" alt="조권">
+                  <div><h6 class="bold">조권<span>JO KWON</span></h6>
+                    <p>2018.06 디지털싱글 [ONE] 발매<br />
+                    2018.01 디지털싱글 [새벽] 발매<br />
+                    2016.02 디지털싱글 [횡단보도] 발매<br />
+                    2014.10.30 3rd 정규앨범 [Let's Talk] - 2AM <br /> 
+                    2013.11.27 3rd 미니앨범 [NOCTURNE] - 2AM
+
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="./img/btob02.png" alt="비투비">
+                  <div><h6 class="bold">비투비<span>BTOB</span></h6>
+                    <p>2021.11 Lee Minhyuk (HUTA)2nd Album [BOOM]<br />
+                      2021.02 3rd Album [Be Together]<br />
+                      2021.11 Lee Minhyuck Digital Single [알아 (Good Night)]<br />
+                      2021.08 Special Album [4U : OUTSIDE]<br />
+                      2021.06 Digital Single [Blue Moon (Cinema Ver.)]<br />
+                      2021.02 Prniel Digital Single [Valentine]
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="./img/clc02.png" alt="씨엘씨">
+                  <div><h6 class="bold">씨엘씨<span>CLC</span></h6>
+                    <p>2020.09 Single [Helicopter]<br />
+                      2019.09 Digital Single [Devile]<br />
+                      2019 제 3회 소리바다 BEST K-MUSIC AWARDS - 뮤직스타상<br />
+                      2019.02 공식 팬클럽 'CHESHIRE' 2기 팬미팅<br />
+                      2019.05 Digital Single [ME(美)]<br />
+                      2018.06 Digital Single [ONE]<br />
+                      2018.04 CLC 3주년 기념 기부 콘서트<br />
+                      2018 대한민국 브랜드 대상 - 연예 브랜드 대상
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <img src="./img/pentagon02.png" alt="펜타곤">
+                  <div><h6 class="bold">펜타곤<span>PENTAGON</span></h6>
+                    <p>2022.08 키노 스페셜 싱글 [POSE]<br />
+                      2022.01 12th 미니앨범 [IN:VITE U]<br />
+                      2021.08 디지털싱글 [Cerberus]<br />
+                      2021.03 11th 미니앨범 [LOVE or TAKE]<br />
+                      2020.12 디지털싱글 [불꽃]<br />
+                      2020.12 PENTAGON ONLINE CONCERT [WE L:IVE]<br />
+                      2020.10 10th 미니앨범 [WE:TH]
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="./img/idle02.png" alt="아이들">
+                  <div><h6 class="bold">(여자)아이들<span>(G)I-DLE</span></h6>
+                    <p>2022.03 1st Full Album [I NEVER DIE]<br />
+                      2021.01 4th Mini Album [I burn]<br />
+                      2020.08 Single [DUMDi DUMDi]<br />
+                      2020.04 3rd Mini Album [I trust]<br />
+                      2020.06 Digital Single [Uh-Oh]<br />
+                      2020.11 공식팬클럽 2기 언택트 팬미팅 [GBC in the NEVERLAND]<br />
+                      2020 GDA [Golden Disc Awards] - Best Performance (Femail)<br />
+                      2019.02 2nd Mini Album [I made]<br />
+                      2018.08 Digital Single [한(一)]<br />
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="./img/lightsum02.png" alt="라잇썸">
+                  <div><h6 class="bold">라잇썸<span>LIGHTSUM</span></h6>
+                    <p>2022.05 1st 미니 [Into the Light]<br />
+                    2021.10 2nd 싱글 [Light a Wish]<br />
+                    2021.06 데뷔 싱글 [Vanilla]<br />
+                    </p>
+                  </div>
+                </div>
+
+                <div><img src="./img/leeeunji02.png" alt="이은지">
+                  <div><h6 class="bold">이은지<span>LEE EUN JI</span></h6>
+                    <p>2021 SBS 박소현의 러브게임<br />
+                      2019 MBC every1 '대한외국인'<br />
+                      2014 tvN '코미디 빅리그'<br />
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="./img/nainwoo02.png" alt="나인우">
+                  <div><h6 class="bold">나인우<span>NA IN WOO</span></h6>
+                    <p>2022 KBS '1박 2일' 시즌4<br />
+                      2021 KBS연기대상 신인상, 베스트 커플상<br />
+                      2021 카카오TV '그녀의 버킷리스트' 강한솔 역<br />
+                      2021 웹드라마 '지상천하' 나인우 역<br />
+                      2021 KBS2 '달이 뜨는 강' 온달 역<br />
+                      2020 tvN '철인왕후' 김병인 역<br />
+                      2020 JTBC '쌍갑포차' 김원형 역<br />
+                    </p>
+                  </div>
+                </div>
+
+          </div>
+            </div>
+        </div>
+        </div>
+    <div id="footers"></div>
+    
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <script>
+      new Swiper( '.swiper-container',
+{
+  slidesPerView: 4,
+  spaceBetween: 50,
+  loop: true,
+  speed: 3000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+} );
+    </script>
+</body>
+</html>

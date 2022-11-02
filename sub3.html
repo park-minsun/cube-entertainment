@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐브엔터테인먼트</title>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/./faviconandroid-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<!-- JQuery CDN -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- font -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+<!-- swiper slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- script -->
+<script defer src="./script/youtube.js"></script>
+<script defer src="./script/javascript.js"></script>
+
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("./common/header.html");  //헤더 인클루드
+        $("#footers").load("./common/footer.html");  //푸터부분 인클루드
+     });
+    </script>
+    
+</head>
+<body>
+    <div id="headers"></div>
+    <div class="inner">
+        <h1>NEWS</h1>
+        <!-- <div class="history">
+            <p class="history_nav">ARTISTS</p>
+            <span class="history_line"></span>
+            <p>ARTISTS</p>
+        </div> -->
+
+        <div class="news_wrap">
+            <div class="news_txt">
+                <h4 class="bold">더 많은 큐브의 소식을 보고 싶으신가요?</h4>
+                <a href="https://www.youtube.com/c/theunitedcube" target="_blank" class="cursor_hover ar_btn news_btn" >유튜브 채널 보러가기<span class="arrow01"><img src="./img/arrow01.png" alt=""></span></a>
+            </div>
+            <div class="news_box">
+                <div class="news_row">
+                    <div class="ro_box">
+                        <a href="javascript:void(0)">
+                        <img src="./img/news01.png" alt="키노 POSE">
+                        <h6>키노(KINO) - 'POSE' M/V</h6>
+                        <p>2022-08-09</p>
+                    </a>
+                    </div>
+                    <div class="ro_box mg-t">
+                        <a href="javascript:void(0)">
+                        <img src="./img/news02.png" alt="이민혁 BOOM">
+                        <h6>이민혁 (HUTA) - 'BOOM' OFFICIAL MUSIC VIDEO</h6>
+                        <p>2022-06-27</p>
+                    </a>
+                    </div>
+                    <div class="ro_box">
+                        <a href="javascript:void(0)">
+                        <img src="./img/news03.png" alt="라잇썸 ALIVE">
+                        <h6>LIGHTSUM(라잇썸) - 'ALIVE' OFFICIAL MUSIC VIDEO</h6>
+                        <p>2022-05-24</p>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="news_row">
+                    <div class="ro_box">
+                        <a href="javascript:void(0)">
+                        <img src="./img/news04.png" alt="미연 drive">
+                        <h6>미연 (MIYEON) - 'DRIVE' OFFICIAL MUSIC VIDEO</h6>
+                        <p>2022-04-27</p>
+                    </a>
+                    </div>
+                    <div class="ro_box mg-t">
+                        <a href="javascript:void(0)">
+                        <img src="./img/news05.png" alt="아이들 TOMBOY">
+                        <h6>(여자)아이들((G)I-DLE) - 'TOMBOY' OFFICIAL MUSIC VIDEO</h6>
+                        <p>2022-03-17</p>
+                    </a>
+                    </div>
+                    <div class="ro_box">
+                        <a href="javascript:void(0)">
+                        <img src="./img/news06.png" alt="비투비 노래">
+                        <h6>비투비 (BTOB) - '노래 (THE SONG)' OFFICIAL MUSIC VIDEO</h6>
+                        <p>2022-02-21</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" class="news_btn02" >VIEW MORE</a> 
+        </div>
+
+        </div>
+        
+    <div id="footers"></div>
+    
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+</body>
+</html>

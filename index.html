@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐브엔터테인먼트</title>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/./faviconandroid-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<!-- JQuery CDN -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- font -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+<!-- script -->
+<script defer src="./script/youtube.js"></script>
+<script defer src="./script/javascript.js"></script>
+
+<script>
+    alert("본 사이트는 상업적 목적이 아닌 개인 포트폴리오의 용도로 만들어졌으며, 개인이 100%로 만든 포트폴리오 입니다.");
+</script>
+</head>
+<body>
+    <div class="loading-page">
+        <div class="counter">
+          <h1>0%
+            <!--
+            h1.abs loading
+            h1.abs.color loading
+            -->
+          </h1>
+          <hr/>
+        </div>
+      </div>
+    <!-- <div class="loading">
+        <div class="load_wrap">
+            <div class="count">100</div>
+            <h1>%</h1>
+            <hr>
+     </div>
+   </div>  -->
+<div class="wrap">
+    <header>
+        <div class="header_wrap">
+            <a class="logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
+            <div class="hamburger">
+                <button>
+                    <a class="menu-trigger" href="#">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                  </button>
+            </div> 
+        </div>
+    </header>
+    <!-- Main Visual -->
+<section class="main_visual">
+    <div class="youtube_area">
+        <div id="player"></div>
+        </div>
+        <div class="youtube_cover"></div>
+</section>
+<!-- Site Map -->
+<section class="sitemap"> 
+        <div class="menu_wrap">
+            <ul>
+                <li><a href="./sub1-1.html">COMPANY</a></li>
+                <li><a href="./sub2.html">ARTISTS</a></li>
+                <li><a href="./sub3.html">NEWS</a></li>
+                <li><a href="./sub4.html">CONTACT</a></li>
+            </ul>
+            <div class="sitemap_txt">
+                <div class="sm_txt01">
+                    세상을<br> <span class="bold">큐브와 함께</span> 하세요
+                </div>
+                <div class="sm_txt02">
+                    T. 02-3445-1045 <br />
+                    서울특별시 성동구 성수동2가 아차산로 83 <br />
+                   <span style="opacity: 0.5;">© 2022 Cube Entertainment inc. All Rights Reserved</span> 
+                </div>
+            </div>
+        </div>    
+</section>
+<!-- Main 01 -->
+<section class="main_audition">
+    <div class="scroll_txt01"><img src="./img/scroll-text01.svg" alt="Cube Entertainment"></div>
+    <div class="scroll_txt02"><img src="./img/scroll-text02.png" alt="Global audition"></div>
+    <a href="javascript:void(0)" class="audition_btn cursor_hover ar_btn" >오디션 보러가기<span class="arrow01"><img src="./img/arrow01.png" alt=""></span></a>
+    <div class="marquee">
+        <div>
+          <span>큐브 글로벌 오디션에 지원하세요.</span>
+          <span>큐브 글로벌 오디션에 지원하세요.</span>
+        </div>
+      </div>
+</section>
+<!-- Main 02 -->
+<section class="main_introduction">
+    <div class="main02_left">
+        <span class="bold">CUBE</span>는 명품 컨텐츠로 세계화에 앞장서는 <br />
+        <span class="bold">초일류 엔터테인먼트</span> 기업입니다.
+    </div>
+    <div class="main02_right">
+        <div>
+            큐브는 잠재력있는 인재를 발굴한 후 전문화된 트레이닝 시스템을 바탕으로 인성, 근성, 실력을 겸비한
+            우수한 아티스트로 개발하여 세계시장에 내놓아도 손색이 없는 훌륭한 컨텐츠를 제작해 오고 있습니다.
+            기획, 제작, 프로모션은 각 부문별로 업계 최고의 전문가들이 모여 섬세하고 노련한 손길로
+            소속 아티스트들을 더욱 빛나게 하고 있습니다.<br /><br />
+
+            탁월한 분석력과 효율적인 시스템을 무기로 음반 프로듀싱의 새로운 패러다임을 구축하고,
+            항상 신선한 컨텐츠를 생산할 수 있는 CUBE PRODUCTION 만의 독특한 힘은 모든 팀의 무한한 상상력과
+            긍정적 의지를 토대로 전 아티스트와 함께 불철주야 타오르고 있습니다.<br /><br />
+
+            음악성, 대중성, 차별성 이라는 3가지 원칙으로 완성되어진 본사의 아티스트들은 국내 및 해외 시장에서
+            각광받는 컨텐츠로 인정받으며 성장하였고, 세계시장을 공략하는 CUBE 만의 새로은 방법을 제시 했습니다.
+            CUBE는 세계를 무대로 탁월한 아시앙 명품 컨텐츠를 만들어 내고자 일념으로 오늘도 매진하고 있습니다.
+        </div>
+    </div>
+</section>
+<!-- main 03 -->
+<section class="main_contact">
+    <div class="main03_left">
+        <div class="con_tit"><img src="./img/con_tit.svg" alt=""></div>
+        <div class="send_wrap bold">
+            <div class="send_text">
+                <h2>사업 관련문의</h2>
+                <p>cube@cubeent.co.kr</p>
+                <a href="javascript:void(0)" class="send_btn bold">Send</a>
+            </div>
+            <div class="send_text">
+                <h2>음악 관련문의</h2>
+                <p>demo@cubeent.co.kr</p>
+                <a href="javascript:void(0)" class="send_btn bold">Send</a>
+            </div>
+            <div class="send_text" style="border: none;">
+                <h2>광고 관련문의</h2>
+                <p>AD@cubeent.co.kr</p>
+                <a href="javascript:void(0)" class="send_btn bold">Send</a>
+            </div>
+        </div>
+        <div class="gradient"></div>
+    </div>
+    <div class="main03_right"></div>
+</section>
+<!-- footer -->
+<footer>
+    <div class="ft_wrap">
+        <div class="ft01">
+            <div class="ft_link">
+                <a href="javascript:void(0)">이용약관</a>
+                <a href="javascript:void(0)">이메일무단수집거부</a>
+                <a href="javascript:void(0)">개인정보처리방침</a>
+            </div>
+            <img class="ft_logo" src="./img/logo.svg" alt="">
+        </div>
+        <div class="ft02">
+            <ul>
+                <li><a href="./sub1-1.html">COMPANY</a></li>
+                <li><a href="./sub2.html">ARTISTS</a></li>
+                <li><a href="./sub3.html">NEWS</a></li>
+                <li><a href="./sub4.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="ft03">
+            <div class="family_site">
+                <select>
+                    <option selected>Family Site</option>
+                    <option>큐브 오디션</option>
+                </select>
+            </div>
+            <div class="sns">
+                <a href="javascrip:void(0)"><img src="./img/youtube.svg" alt=""></a>
+                <a href="javascrip:void(0)"><img src="./img/insta.svg" alt=""></a>
+                <a href="javascrip:void(0)"><img src="./img/twitter.svg" alt=""></a>
+            </div>
+            <p class="ft_copy">© 2022 Cube Entertainment inc. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<div class="cursor"></div>
+<div class="cursor2"></div>
+</div>
+</body>
+</html>
