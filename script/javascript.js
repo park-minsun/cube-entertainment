@@ -1,7 +1,16 @@
 
 // 로딩화면 구현
-$(window).load(function() {
-  $('.loading-page').delay(4000).fadeOut();
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    var loadingPage = document.querySelector('.loading-page');
+    if (loadingPage) {
+      loadingPage.style.transition = 'opacity 0.4s ease';
+      loadingPage.style.opacity = '0';
+      setTimeout(function () {
+        loadingPage.style.display = 'none';
+      }, 400); // fade out 시간만큼 기다린 후 display: none 처리
+    }
+  }, 4000); // 4초 delay
 });
 
 
